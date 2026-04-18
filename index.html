@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sophie Howard — Build An Amazon Brand You Can Sell</title>
+<meta name="description" content="The system Sophie Howard used to sell a 7-figure Amazon brand in 2016 and build her second. Register for the Blue Sky on-demand masterclass.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#050a14;--bg-2:#0a1426;--surface:#101c33;--line:rgba(210,170,90,.12);
+--text:#f4ecda;--muted:#9aa6b8;--gold:#c9a45c;--gold-2:#e2c27a;--gold-3:#f3dda3;
+--navy:#1e3a6a;--navy-2:#2d4f8a;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(210,170,90,.028) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-30%;left:50%;transform:translateX(-50%);width:80%;height:70%;background:radial-gradient(circle,rgba(30,58,106,.22) 0%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(5,10,20,.94);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:24px;letter-spacing:-.01em}
+.logo span{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#050a14;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-block;padding:6px 16px;background:rgba(210,170,90,.08);border:1px solid rgba(210,170,90,.28);border-radius:24px;font-size:12px;font-weight:600;color:var(--gold-2);letter-spacing:.2em;text-transform:uppercase;margin-bottom:24px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(44px,6.4vw,80px);font-weight:700;line-height:1.05;letter-spacing:-.02em;margin-bottom:24px}
+h1 em{font-style:italic;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 50%,var(--gold-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4.2vw,52px);font-weight:700;line-height:1.12;letter-spacing:-.01em;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:14px;color:var(--text)}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:80px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:720px}
+.cta-primary{display:inline-block;padding:18px 40px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#050a14;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 12px 40px rgba(210,170,90,.28);transition:.2s;letter-spacing:.01em}
+.cta-primary:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(210,170,90,.4)}
+.vsl-box{max-width:900px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(210,170,90,.1) 0%,transparent 60%)}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(210,170,90,.14);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;z-index:1}
+.play-btn svg{width:32px;height:32px;fill:var(--gold-2);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-family:'Playfair Display',serif;font-size:42px;font-weight:700;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.02em}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(210,170,90,.4);transform:translateY(-4px)}
+.card-num{font-size:13px;color:var(--gold-2);font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(30,58,106,.28) 0%,rgba(210,170,90,.06) 100%);border:1px solid rgba(210,170,90,.2);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--gold)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#050a14;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#0a1426 0%,#14243f 100%);border:1px solid rgba(210,170,90,.28);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.02em}
+.offer-price small{font-size:18px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);font-family:'Inter',sans-serif}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'✓';color:var(--gold-2);font-weight:700;flex-shrink:0}
+.proof-wall{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.proof-card{padding:32px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
+.proof-stars{color:var(--gold-2);font-size:16px;letter-spacing:.12em;margin-bottom:14px}
+.proof-quote{font-size:15px;color:var(--text);line-height:1.6;margin-bottom:18px;font-style:italic}
+.proof-author{font-size:13px;color:var(--muted);font-weight:500}
+.proof-author strong{color:var(--gold-2);display:block;margin-bottom:2px}
+.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center}
+.bio-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--gold-2);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:360px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){
+.problem-grid,.pillar-grid,.stats,.proof-wall{grid-template-columns:1fr}
+.offer-grid,.bio{grid-template-columns:1fr}
+.lead-capture,.offer-box{padding:40px 24px}
+.form-row{flex-direction:column}
+section{padding:70px 0}
+.stats{gap:20px}
+}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav-inner">
+<div class="logo">SOPHIE <span>HOWARD</span></div>
+<a href="#register" class="nav-cta">Watch The Masterclass</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="eyebrow reveal">BLUE SKY AMAZON · ON-DEMAND MASTERCLASS</div>
+<h1 class="reveal">Build An Amazon Brand You Can Actually <em>Sell</em></h1>
+<p class="reveal">Most Amazon sellers build a job. I'll show you how to build an asset. The same blueprint I used to sell a brand for seven figures in 2016, and build my second one.</p>
+<div class="vsl-box reveal">
+<div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+</div>
+<a href="#register" class="cta-primary reveal">Watch The 22-Minute Masterclass →</a>
+<div class="stats reveal">
+<div><div class="stat-num">$2M</div><div class="stat-label">Built From A Kitchen Table</div></div>
+<div><div class="stat-num">7-Figure</div><div class="stat-label">Exit In 2016</div></div>
+<div><div class="stat-num">1,000+</div><div class="stat-label">Students Worldwide</div></div>
+<div><div class="stat-num">14</div><div class="stat-label">Training Modules</div></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE PROBLEM</div>
+<h2 class="reveal">Most Amazon Brands<br>Plateau At $20K A Month</h2>
+<p class="reveal" style="font-size:18px">Not because the operator is lazy. Because the foundation was wrong from day one.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">KILLER 01</div><h3>Wrong Niche</h3><p>Picked from excitement instead of from math. Margin too thin, review ceiling too high, non-brandable product. The business is doomed before the first unit ships.</p></div>
+<div class="card reveal"><div class="card-num">KILLER 02</div><h3>Generic Product</h3><p>A white-labeled supplement or a rebranded kitchen gadget is a commodity. Buyers pay for brands, not commodities. The multiple on exit reflects that.</p></div>
+<div class="card reveal"><div class="card-num">KILLER 03</div><h3>No Saleability Plan</h3><p>Built around the owner instead of the system. Buyers can't acquire what only you can run. That ceiling kills the exit before it ever happens.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE FRAMEWORK</div>
+<h2 class="reveal">The Blue Sky Method,<br>Built In 3 Pillars</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">PILLAR 1</div><h3>Niche + Validation</h3><p>The 4-filter research system I teach every student. Margin, simplicity, reviewable ceiling, brand-ability. Find one that passes, and you're set for years.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 2</div><h3>Premium Brand Build</h3><p>Packaging, positioning, supplier story. The difference between a $20 commodity and a $40 brand is a story buyers will pay a multiple for.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 3</div><h3>Saleability From Day One</h3><p>Documented systems, clean Seller Central, owner-independent operations. Build it as if a buyer could walk in and take it over tomorrow.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">STUDENT PROOF</div>
+<h2 class="reveal">Real Students, Real Brands</h2>
+<p class="reveal" style="margin-bottom:10px">Numbers from inside the Blue Sky community.</p>
+<div class="proof-wall">
+<div class="proof-card reveal">
+<div class="proof-stars">★ ★ ★ ★ ★</div>
+<p class="proof-quote">"I spent six weeks on niche research before I picked anything. Landed on premium compost bins. Nine months in I was doing over $18K a month and already had an offer to buy the brand."</p>
+<div class="proof-author"><strong>Priya M.</strong>Melbourne · Home Goods</div>
+</div>
+<div class="proof-card reveal">
+<div class="proof-stars">★ ★ ★ ★ ★</div>
+<p class="proof-quote">"Sophie's focus on building a real brand instead of flipping products changed the whole trajectory. I went from a failed Shopify store to a $34K month on Amazon in year two."</p>
+<div class="proof-author"><strong>James T.</strong>Auckland · Pet Accessories</div>
+</div>
+<div class="proof-card reveal">
+<div class="proof-stars">★ ★ ★ ★ ★</div>
+<p class="proof-quote">"The thing nobody else teaches is the exit mindset. Every decision I make on my brand is now filtered through 'would a buyer care about this.' It's completely reframed how I build."</p>
+<div class="proof-author"><strong>Elena R.</strong>Sydney · Natural Beauty</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section id="register">
+<div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE TRAINING</div>
+<h2>The 22-Minute Blue Sky Masterclass</h2>
+<p style="margin:0 auto">The 3-pillar system I use with every student. Niche validation, premium brand build, saleability. Watch on your schedule. No live-webinar pretence. Real training, yours to keep.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox for the masterclass link.')">
+<input type="email" placeholder="Enter your email" required>
+<button type="submit">Get Instant Access →</button>
+</form>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE PROGRAM</div>
+<h2 class="reveal">Blue Sky Amazon</h2>
+<div class="offer-box reveal">
+<div class="offer-grid">
+<div>
+<div class="offer-price">Application<small>&nbsp;only · Payment plans available</small></div>
+<p style="margin-top:16px">The complete curriculum for building an Amazon brand worth owning. Not a drop-shipping course. Not a retail-arbitrage hack. A real brand-build program from someone who has actually sold one for seven figures. Investment is discussed on the qualification call, and most accepted students qualify for a payment plan.</p>
+<ul class="feature-list">
+<li>Product University (niche-to-launch curriculum, 14 modules)</li>
+<li>Amazon Navigator (scaling and optimization playbook)</li>
+<li>7 one-on-one coaching calls across your first year</li>
+<li>Private community of 1,000+ students</li>
+<li>Weekly Q&A calls with my team</li>
+<li>Supplier database and sourcing contacts</li>
+<li>7-day money-back guarantee</li>
+</ul>
+</div>
+<div>
+<div style="background:rgba(30,58,106,.2);border:1px solid rgba(210,170,90,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">PROOF</div>
+<h3 style="margin-bottom:12px">Priya. Melbourne. $18K/mo In 9 Months.</h3>
+<p style="margin:0 auto 24px">Former management consultant. Built a premium compost-bin brand from her kitchen table while running part-time consulting on the side.</p>
+<a href="#register" class="cta-primary" style="width:100%">Apply Now →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="bio">
+<div class="bio-img reveal">[Sophie's photo]</div>
+<div class="reveal">
+<div class="eyebrow">ABOUT SOPHIE</div>
+<h2>From A Kitchen Table To A 7-Figure Exit</h2>
+<p style="font-size:17px;margin-top:20px">A decade ago I had two small kids, a laptop, and a kitchen table in New Zealand. I didn't want a career. I wanted an asset. I started selling handmade products on Amazon, grew the brand to $2M in revenue, and sold it for seven figures in 2016.</p>
+<p style="margin-top:16px">Since then I've built a second global brand, taught the Blue Sky method to over a thousand students, and watched dozens of them cross their own first big months. My only focus is teaching the version of Amazon that builds real assets, not the version that builds a second job.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How much capital do I need beyond the program?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Plan for $5K-$15K in initial inventory and launch costs. Amazon is not a zero-capital business. If you're starting with less than $5K outside of the program fee, I'd recommend saving a bit longer before enrolling.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How long until my brand makes real money?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Most students hit their first meaningful revenue month between month 4 and month 7 after enrolling. Your first $10K month is typically between month 6 and month 12. This is a real business, not a side hustle.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What's the time commitment?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>10-15 hours a week in the first 6 months (research, sourcing, listing, review management). Once your first brand is running, it drops to 5-10 hours a week and you can start a second SKU.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>I've read mixed reviews online. How should I think about that?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Blue Sky is a premium program and isn't right for everyone. The students who fail are usually undercapitalized or expecting drop-shipping timelines. The students who succeed are serious operators with the capital, time, and patience to build a real brand. The application call is where we figure out which group you're in, honestly.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Who is this NOT for?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Anyone looking for passive income from week one, anyone who wants drop-shipping or print-on-demand, and anyone unwilling to wait 4-6 months for real revenue. If any of those describe you, this isn't the right program.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="text-align:center">
+<div class="container">
+<h2 class="reveal">Your Brand, Built The Right Way</h2>
+<p class="reveal" style="margin:20px auto 40px">Start with the free masterclass. If it clicks, the application for Blue Sky is at the end.</p>
+<a href="#register" class="cta-primary reveal">Watch The Masterclass →</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>© 2026 Sophie Howard · Blue Sky Amazon. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
